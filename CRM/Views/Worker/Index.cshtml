@@ -24,10 +24,10 @@
                     <a class="button sort-button" asp-action="Month" asp-controller="Worker">Месяц</a>
                     <form asp-action="Range" asp-controller="Worker">
                         <label>От</label>
-                        <input type="date" name="1"/>
+                        <input type="date" name="1" />
                         <label>До</label>
-                        <input type="date" name="2"/>
-                        <input type="submit" value="Показать" />
+                        <input type="date" name="2" />
+                        <input class="button sort-button" type="submit" value="Показать" />
                     </form>
                 </div>
             </div>
@@ -67,7 +67,11 @@
                         <th style="width:250px;">@note.Description</th>
                         <th style="width:150px;">@note.Address</th>
                         <th style="width:150px;">@note.Iban</th>
-                        <th><a class="button add-button" asp-action="EditIndex" asp-route-id=@note.Id>Edit</a></th>
+                        <th style="width:150px;">
+                            <div class="button-container-edit">
+                                <a class="button edit-button" asp-action="EditIndex" asp-route-id="@note.Id">Edit</a>
+                            </div>
+                        </th>
                     </tr>
                 }
             }

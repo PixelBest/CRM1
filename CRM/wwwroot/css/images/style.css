@@ -426,7 +426,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 20px 20px;
     font-size: 14px;
     text-align: center;
     text-decoration: none;
@@ -455,6 +455,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: background-color 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     margin-left: 10px;
+    margin-right: 10px;
     justify-content: center;
     align-items: center;
 }
@@ -480,6 +481,42 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate3d(0, -50%, 0);
     transition: opacity 0.2s linear;
 }
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="date"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px
+}
+  
+
+input[type="submit"] {
+    font-family: 'Comfortaa';
+    padding: 10px 10px;
+    background-color: #A9A9A9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-left: 10px
+}
+
+input[type="submit"]:hover {
+        background-color: #808080;
+}
+
 .edit-button {
     font-family: 'Comfortaa';
     background-color: #A9A9A9;
@@ -487,6 +524,7 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
     transition: background-color 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 
 .button-container-edit {
