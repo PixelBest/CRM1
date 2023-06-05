@@ -48,18 +48,21 @@ namespace CRM.Controllers
             return RedirectToAction("notice", "Home");
         }
 
+        [HttpGet]
         public async Task<IActionResult> Service()
         {
             var a = await diary.AllAbout();
             return View(a);
         }
 
+        [HttpGet]
         public async Task<IActionResult> Project()
         {
             var a = await diary.AllWedo();
             return View(a);
         }
 
+        [HttpGet]
         public async Task<IActionResult> Blog()
         {
             var a = await diary.AllBlog();

@@ -173,30 +173,36 @@ namespace CRM.Controllers
             await aboutDiary.DeleteAboutAsync(id);
             return RedirectToAction("About", "Worker");
         }
+
+        [HttpGet]
         public async Task<IActionResult> Today()
         {
             var notes = await WorkerAction.Today();
             return View(notes);
         }
-        
+
+        [HttpGet]
         public async Task<IActionResult> Yesterday()
         {
             var notes = await WorkerAction.Yesterday();
             return View(notes);
         }
-        
+
+        [HttpGet]
         public async Task<IActionResult> Week()
         {
             var notes = await WorkerAction.Week();
             return View(notes);
         }
-        
+
+        [HttpGet]
         public async Task<IActionResult> Month()
         {
             var notes = await WorkerAction.Month();
             return View(notes);
         }
-        
+
+        [HttpGet]
         public async Task<IActionResult> Range()
         {
             var form = Request.Form;
