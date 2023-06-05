@@ -46,7 +46,6 @@ namespace CRM.API.Controllers
                 return BadRequest(ModelState);
             }
 
-            note.Id = _db.Wedo.Count() + 1;
             _db.Wedo.Add(note);
             await _db.SaveChangesAsync();
 

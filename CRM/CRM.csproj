@@ -42,6 +42,7 @@
   <ItemGroup>
     <ProjectReference Include="..\API\CRM.API.csproj" />
     <ProjectReference Include="..\CRM.API.Service\CRM.API.Service.csproj" />
+    <ProjectReference Include="..\CRM.DAL\CRM.DAL.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -45,7 +45,6 @@ namespace CRM.API.Controllers
                 return BadRequest(ModelState);
             }
 
-            note.Id = _db.Blog.Count() + 1;
             _db.Blog.Add(note);
             await _db.SaveChangesAsync();
 

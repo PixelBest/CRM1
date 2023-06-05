@@ -50,7 +50,7 @@
                         <th style="width:350px;">@note.Text</th>
                         <th><a class="button add-button" asp-action="EditWedo" asp-route-id=@note.Id>Edit</a></th>
                         <th>
-                            <form action="https://localhost:7009/Worker/deletewedo/@note.Id">
+                            <form method="post" asp-action="deletewedo" asp-route-id=@note.Id>
                                 <input class="button add-button" type="submit" value="Delete" />
                             </form>
                         </th>

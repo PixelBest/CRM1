@@ -88,6 +88,7 @@ namespace CRM.Controllers
             return RedirectToAction("Blog", "Worker");
         }
 
+        [HttpPost]
         public async Task<IActionResult> DeleteBlog(int id)
         {
             await blogDiary.DeleteBlogAsync(id);
@@ -128,6 +129,7 @@ namespace CRM.Controllers
             return RedirectToAction("Wedo", "Worker");
         }
 
+        [HttpPost]
         public async Task<IActionResult> DeleteWedo(int id)
         {
             await wedoDiary.DeleteWedoAsync(id);
@@ -165,6 +167,7 @@ namespace CRM.Controllers
             return RedirectToAction("About", "Worker");
         }
 
+        [HttpPost]
         public async Task<IActionResult> DeleteAbout(int id)
         {
             await aboutDiary.DeleteAboutAsync(id);

@@ -53,7 +53,7 @@
                         <th style="width:250px;">@note.Text</th>
                         <th><a class="button add-button" asp-action="EditBlog" asp-route-id=@note.Id>Edit</a></th>
                         <th>
-                            <form action="https://localhost:7009/Worker/deleteblog/@note.Id">
+                            <form method="post" asp-action="DeleteBlog" asp-route-id=@note.Id>
                                 <input class="button add-button" type="submit" value="Delete" />
                             </form>
                         </th>
